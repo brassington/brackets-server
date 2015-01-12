@@ -7,8 +7,8 @@
 [submodule "embedded-ext/client-fs"]
 	path = embedded-ext/client-fs
 	url = https://github.com/rabchev/brackets-remote-fs.git
-[submodule "embedded-ext/extensions-toolbar"]
-	path = embedded-ext/extensions-toolbar
+[submodule "embedded-ext/Monokai-Dark-Soda"]
+	path = embedded-ext/Monokai-Dark-Soda
 	url = https://github.com/rainje/Monokai-Dark-Soda.git
 [submodule "embedded-ext/extensions-toolbar"]
 	path = embedded-ext/extensions-toolbar
