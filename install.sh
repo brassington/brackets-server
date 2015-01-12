@@ -6,7 +6,8 @@ git submodule update --recursive --init
 
 # Target specific commit version by checking out from brackets-src submodule
 cd brackets-src/
-git checkout ea908cae55233d34f04b4f2cab5faf62ffa4fb42
+# git checkout ea908cae55233d34f04b4f2cab5faf62ffa4fb42  # Should work, but doesn't for now, stick with last working version
+git checkout 9b92198f962d273231ac6b399fd7649cb9a5a37b
 git reset HEAD --hard
 cd ../
 
@@ -27,9 +28,9 @@ sed -i 's%#grid > .core > .span(@gridColumns);%//#grid > .core > .span(@gridColu
 sudo grunt build
 
 # Clone down copies of custom/default installed extensions
-cd embedded-ext/
-git clone https://github.com/jabbrass/brackets-working-file-tabs.git
-cd ../
+# cd embedded-ext/
+# git clone https://github.com/jabbrass/brackets-working-file-tabs.git
+# cd ../
 
 # Use this command to start the server from the build directory
 # node bin/run -d
