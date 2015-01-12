@@ -25,9 +25,6 @@ sudo npm install
 # Fix blocking build issue (Does not work on OSX, sed issue?) TODO: Why is this line a problem?
 sed -i 's%#grid > .core > .span(@gridColumns);%//#grid > .core > .span(@gridColumns);%' ./brackets-src/src/styles/bootstrap/navbar.less
 
-# Run Grunt build, to install grunt: npm install -g grunt-cli
-sudo grunt build
-
 # Clone down copies of custom/default installed extensions
 cd embedded-ext/
 git clone https://github.com/rainje/Monokai-Dark-Soda.git
@@ -38,10 +35,13 @@ git clone https://github.com/jabbrass/brackets-working-file-tabs.git
 git clone https://github.com/jabbrass/brackets-terminal-package.git
 cd ../
 
+# Run Grunt build, to install grunt: npm install -g grunt-cli
+sudo grunt build
+
 # Use this command to start the server from the build directory
 # node bin/run -d
 # node bin/run -d --port 8079 --proj-dir ../projects
-node bin/run -d --port 8079
+node bin/run -d --port 8079 --proj-dir ../projects
 
 # or use this command set of commands to remove you current global brackets-server installation
 # npm uninstall -g brackets
