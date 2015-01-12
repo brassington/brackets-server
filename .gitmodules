@@ -7,21 +7,3 @@
 [submodule "embedded-ext/client-fs"]
 	path = embedded-ext/client-fs
 	url = https://github.com/rabchev/brackets-remote-fs.git
-[submodule "embedded-ext/Monokai-Dark-Soda"]
-	path = embedded-ext/Monokai-Dark-Soda
-	url = https://github.com/rainje/Monokai-Dark-Soda.git
-[submodule "embedded-ext/extensions-toolbar"]
-	path = embedded-ext/extensions-toolbar
-	url = https://github.com/dnbard/extensions-toolbar.git
-[submodule "embedded-ext/dev-docs-viewer"]
-	path = embedded-ext/dev-docs-viewer
-	url = https://github.com/gruehle/dev-docs-viewer.git
-[submodule "embedded-ext/brackets-code-folding"]
-	path = embedded-ext/brackets-code-folding
-	url = https://github.com/thehogfather/brackets-code-folding.git
-[submodule "embedded-ext/brackets-working-file-tabs"]
-	path = embedded-ext/brackets-working-file-tabs
-	url = https://github.com/jabbrass/brackets-working-file-tabs.git
-[submodule "embedded-ext/brackets-terminal-package"]
-	path = embedded-ext/brackets-terminal-package
-	url = https://github.com/jabbrass/brackets-terminal-package.git
