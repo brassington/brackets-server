@@ -33,6 +33,7 @@ cd ../
 
 # Use this command to start the server from the build directory
 # node bin/run -d
+# node bin/run -d --port 8079 --proj-dir ../projects
 #
 # or use this command set of commands to remove you current global brackets-server installation
 # npm uninstall -g brackets
