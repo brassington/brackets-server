@@ -6,8 +6,9 @@ git submodule update --recursive --init
 
 # Target specific commit version by checking out from brackets-src submodule
 cd brackets-src/
-# git checkout ea908cae55233d34f04b4f2cab5faf62ffa4fb42  # Should work, but doesn't for now, stick with last working version
-git checkout 9b92198f962d273231ac6b399fd7649cb9a5a37b
+git checkout ea908cae55233d34f04b4f2cab5faf62ffa4fb42
+# Should work, but doesn't for now, stick with last working version
+# git checkout 9b92198f962d273231ac6b399fd7649cb9a5a37b
 git reset HEAD --hard
 cd ../
 
@@ -28,14 +29,20 @@ sed -i 's%#grid > .core > .span(@gridColumns);%//#grid > .core > .span(@gridColu
 sudo grunt build
 
 # Clone down copies of custom/default installed extensions
-# cd embedded-ext/
-# git clone https://github.com/jabbrass/brackets-working-file-tabs.git
-# cd ../
+cd embedded-ext/
+git clone https://github.com/rainje/Monokai-Dark-Soda.git
+git clone https://github.com/dnbard/extensions-toolbar.git
+git clone https://github.com/gruehle/dev-docs-viewer.git
+git clone https://github.com/thehogfather/brackets-code-folding.git
+git clone https://github.com/jabbrass/brackets-working-file-tabs.git
+git clone https://github.com/jabbrass/brackets-terminal-package.git
+cd ../
 
 # Use this command to start the server from the build directory
 # node bin/run -d
 # node bin/run -d --port 8079 --proj-dir ../projects
-#
+node bin/run -d --port 8079
+
 # or use this command set of commands to remove you current global brackets-server installation
 # npm uninstall -g brackets
 # npm install -g
