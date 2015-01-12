@@ -14,7 +14,7 @@ sudo rm -rf ./brackets-src/src/thirdparty/CodeMirror2
 git clone https://github.com/codemirror/CodeMirror ./brackets-src/src/thirdparty/CodeMirror2 --recursive
 
 # Fix blocking build issue TODO: Why does Brackets commit: 5742874a7449525488535679b2b2fef009bdfed9 cause LiveDev blocking issue?
-wget -O ./brackets-src/src/LiveDevelopment/LiveDevelopment.js https://github.com/adobe/brackets/blob/9b92198f962d273231ac6b399fd7649cb9a5a37b/src/LiveDevelopment/LiveDevelopment.js
+wget -O ./brackets-src/src/LiveDevelopment/LiveDevelopment.js https://raw.githubusercontent.com/adobe/brackets/9b92198f962d273231ac6b399fd7649cb9a5a37b/src/LiveDevelopment/LiveDevelopment.js
 
 # Install NPM dependencies
 sudo npm install
