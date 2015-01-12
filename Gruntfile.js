@@ -239,7 +239,9 @@ module.exports = function (grunt) {
                             "xorigin.js",
                             "dependencies.js",
                             "thirdparty/requirejs/require.js",
-                            "LiveDevelopment/launch.html"
+                            "LiveDevelopment/launch.html",
+                            "LiveDevelopment/MultiBrowserImpl/transports/**",
+                            "LiveDevelopment/MultiBrowserImpl/launchers/**"
                         ]
                     },
                     /* extensions and CodeMirror modes */
